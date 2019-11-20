@@ -1,5 +1,8 @@
 package cn.itcast.bean;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class User {
 	
 	/*
@@ -17,6 +20,17 @@ public class User {
 	private String user_name;
 	private String user_password;
 	private Character user_state;
+	
+	//用户与拜访记录
+	private Set<SavleVisit> savleVisits=new HashSet<>();
+	
+	
+	public Set<SavleVisit> getSavleVisits() {
+		return savleVisits;
+	}
+	public void setSavleVisits(Set<SavleVisit> savleVisits) {
+		this.savleVisits = savleVisits;
+	}
 	public Long getUser_id() {
 		return user_id;
 	}

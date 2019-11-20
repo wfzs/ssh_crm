@@ -12,5 +12,9 @@
 		<property name="user_password"  ></property>
 		<property name="user_state"  ></property>
 	
+		<set name="savleVisits">
+			<key column="visit_user_id"></key>
+			<one-to-many class="SavleVisit"/>
+		</set>
 	</class>
 </hibernate-mapping>
